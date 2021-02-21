@@ -1,0 +1,730 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\(packages)\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\..\(packages)\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4F434796-8DB9-46D1-9625-DCB37803A205}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>nilnul.web</RootNamespace>
+    <AssemblyName>nilnul._web_._LIB_</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'hbue__deptS_ccpOrg|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\hbue__deptS_ccpOrg\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'hbue__deptS_ccpOrg___release|AnyCPU'">
+    <OutputPath>bin\hbue__deptS_ccpOrg___release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'test_release|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\test_release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'PreferChinese|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\PreferChinese\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_PreferChinese|AnyCPU'">
+    <OutputPath>bin\Release_PreferChinese\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Hbue40|AnyCPU'">
+    <OutputPath>bin\Hbue40\</OutputPath>
+    <DefineConstants>TRACE;HBUE40</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Symbols4Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Symbols4Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AE.Net.Mail, Version=1.7.10.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\AE.Net.Mail.1.7.10.0\lib\net45\AE.Net.Mail.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul.collection_._discrete_._LIB_, Version=1.0.7691.20929, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul.collection_._discrete_._LIB_.1.0.7691.20929\lib\net48\nilnul.collection_._discrete_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul.num._integer_._LIB_, Version=1.0.7707.25781, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul.num._integer_._LIB_.1.0.7707.25781\lib\net48\nilnul.num._integer_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul.num._quotient_._LIB_, Version=1.0.7691.21009, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul.num._quotient_._LIB_.1.0.7691.21009\lib\net48\nilnul.num._quotient_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul.num._real_._LIB_, Version=2.0.7709.42967, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul.num._real_._LIB_.2.0.7709.42967\lib\net48\nilnul.num._real_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._acc_._LIB_, Version=2.0.7711.41032, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._acc_._LIB_.2.0.7711.41032\lib\net48\nilnul._acc_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._acc_._LINQ_, Version=1.0.7711.41024, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._acc_._LINQ_.1.0.7711.41024\lib\net48\nilnul._acc_._LINQ_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._app_._LIB_, Version=1.0.7695.40132, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._app_._LIB_.1.0.7695.40132\lib\net48\nilnul._app_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._bit_._LIB_, Version=1.0.7691.1810, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._bit_._LIB_.1.0.7691.1810\lib\net48\nilnul._bit_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._character_._LIB_, Version=2.1.7691.2637, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._character_._LIB_.2.1.7691.2637\lib\net48\nilnul._character_._LIB_.dll</HintPath>
+      <Aliases>global,character</Aliases>
+    </Reference>
+    <Reference Include="nilnul._comm_._LIB_, Version=1.0.7457.22850, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._comm_._LIB_.1.0.7457.22850\lib\net472\nilnul._comm_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._fs_._LIB_, Version=2.0.7711.35797, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._fs_._LIB_.2.0.7711.35797\lib\net48\nilnul._fs_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._human_._LIB_, Version=1.0.7671.40651, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._human_._LIB_.1.0.7671.40651\lib\net48\nilnul._human_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._human_._LINQ_, Version=1.0.7671.40640, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._human_._LINQ_.1.0.7671.40640\lib\net48\nilnul._human_._LINQ_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._num_._LIB_, Version=1.0.7707.26816, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._num_._LIB_.1.0.7707.26816\lib\net48\nilnul._num_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._num_._LINQ_, Version=1.0.7691.2426, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._num_._LINQ_.1.0.7691.2426\lib\net48\nilnul._num_._LINQ_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._obj_._LIB_, Version=1.0.7691.1599, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._obj_._LIB_.1.0.7691.1599\lib\net48\nilnul._obj_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._rel_._LIB_, Version=1.0.7691.2221, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._rel_._LIB_.1.0.7691.2221\lib\net48\nilnul._rel_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._set_._LIB_, Version=1.0.7691.1956, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._set_._LIB_.1.0.7691.1956\lib\net48\nilnul._set_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._time_._LIB_, Version=1.0.7691.21760, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._time_._LIB_.1.0.7691.21760\lib\net48\nilnul._time_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._txt_._LIB_, Version=1.0.7691.3023, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._txt_._LIB_.1.0.7691.3023\lib\net48\nilnul._txt_._LIB_.dll</HintPath>
+      <Aliases>global,txt</Aliases>
+    </Reference>
+    <Reference Include="nilnul._win_._LIB_, Version=1.0.7691.23503, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._win_._LIB_.1.0.7691.23503\lib\net48\nilnul._win_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\Microsoft.AspNet.Cors.5.2.7\lib\net45\System.Web.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\Microsoft.AspNet.WebApi.Cors.5.2.7\lib\net45\System.Web.Http.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="_nilnul_._LIB_, Version=1.0.7691.1504, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\_nilnul_._LIB_.1.0.7691.1504\lib\net48\_nilnul_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="_nilnul_._LINQ_, Version=1.0.7691.1504, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\_nilnul_._LINQ_.1.0.7691.1504\lib\net48\_nilnul_._LINQ_.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="%28mime%29\Mime_.cs" />
+    <Compile Include="%28mime%29\Mime.cs" />
+    <Compile Include="%28mime%29\Mimes.cs" />
+    <Compile Include="%28mime%29\mime\to\Ext.cs" />
+    <Compile Include="%28mime%29\mime_\Multipart.cs" />
+    <Compile Include="%28mime%29\mime_\_Application_.cs" />
+    <Compile Include="%28mime%29\mime_\Application_.cs" />
+    <Compile Include="%28mime%29\mime_\Application.cs" />
+    <Compile Include="%28mime%29\mime_\application_\Js_.cs" />
+    <Compile Include="%28mime%29\mime_\_application_\Sub_.cs" />
+    <Compile Include="%28mime%29\mime_\_multipart_\Sub_.cs" />
+    <Compile Include="%28mime%29\_mime\main_\application\%28retiring\Application.cs" />
+    <Compile Include="%28mime%29\mime\main\eg\Text.cs" />
+    <Compile Include="%28mime%29\mime\main\eg\Video.cs" />
+    <Compile Include="%28mime%29\_mime\Main.cs" />
+    <Compile Include="%28mime%29\_mime\Mains.cs" />
+    <Compile Include="%28mime%29\_mime\main_\application\Sub_.cs" />
+    <Compile Include="%28mime%29\_mime\subs_\Application.cs" />
+    <Compile Include="aspNet\CfgX.cs" />
+    <Compile Include="aspNet\ctr\X.cs" />
+    <Compile Include="CredentialI.cs" />
+    <Compile Include="ftp\ssl\svr\Front.cs" />
+    <Compile Include="ftp\ssl\svr\front_\RegPrefix.cs" />
+    <Compile Include="ftp\svr\Front.cs" />
+    <Compile Include="ftp\svr\front\down_\BufferUsed.cs" />
+    <Compile Include="ftp\svr\front\file\Del.cs" />
+    <Compile Include="ftp\svr\front\Down.cs" />
+    <Compile Include="ftp\svr\front\file\Exist.cs" />
+    <Compile Include="ftp\svr\front\Stor.cs" />
+    <Compile Include="HttpI.cs" />
+    <Compile Include="http\client\down_\httpClient_\_IntoFolderX.cs" />
+    <Compile Include="http\client\down_\_HttpClientX.cs" />
+    <Compile Include="http\context_\cors\client\request\Header.cs" />
+    <Compile Include="http\context_\cors\client\request\Header_.cs" />
+    <Compile Include="http\context_\cors\svr\response\Header_.cs" />
+    <Compile Include="http\Headers.cs" />
+    <Compile Include="http\Header.cs" />
+    <Compile Include="http\RequestI.cs" />
+    <Compile Include="http\response\header\Field_.cs" />
+    <Compile Include="http\svr\App - Copy.cs" />
+    <Compile Include="http\svr\app\handler_\ascx_\AsJs1%28usePage.cs" />
+    <Compile Include="http\svr\app\handler_\ascxRender_\OnCtr.cs" />
+    <Compile Include="http\svr\app\handler_\ascx_\ClientCache.cs" />
+    <Compile Include="http\svr\app\handler_\ascx_\OnPage.cs" />
+    <Compile Include="http\svr\app\handler_\ascx_\_onPage\PageNoForm.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="http\svr\app\module_\Cors.cs" />
+    <Compile Include="http\svr\app\module_\EnableSession.cs" />
+    <Compile Include="http\svr\app\module_\ling_\enCn_\NewFolder1\BySession - Copy.cs" />
+    <Compile Include="http\svr\app\module_\ling_\enCn_\NewFolder1\BySessionX - Copy.cs" />
+    <Compile Include="http\svr\app\module_\_ling\PerRequest - Copy.cs" />
+    <Compile Include="http\_response\header_\AccessControlAllowOrigin.cs" />
+    <Compile Include="http\response\Status.cs" />
+    <Compile Include="http\restful\Convention.cs" />
+    <Compile Include="http\SessionI.cs" />
+    <Compile Include="http\session_\GetFolder.cs" />
+    <Compile Include="http\SvrI.cs" />
+    <Compile Include="http\TransportI.cs" />
+    <Compile Include="http\_proxy_\HostHeader.cs" />
+    <Compile Include="http\_request\%28retiring\method.cs" />
+    <Compile Include="http\_request_\FirstLineI.cs" />
+    <Compile Include="http\_request_\headers_\ConditionalI.cs" />
+    <Compile Include="http\_request_\_header_\Fields.cs" />
+    <Compile Include="http\_request_\_header_\field_\Accept.cs" />
+    <Compile Include="http\_request_\_head_\key_\Authorization.cs" />
+    <Compile Include="http\_request_\_header_\_fields_\_field_\Key_.cs" />
+    <Compile Include="http\_request_\_header_\fields\Keys.cs" />
+    <Compile Include="http\_request_\_header_\field_\Authentication.cs" />
+    <Compile Include="http\_request_\_header_\field_\authentication\Val.cs" />
+    <Compile Include="http\_request_\_header_\field_\authentication\val\Type.cs" />
+    <Compile Include="http\_response\header_\ContentType.cs" />
+    <Compile Include="http\_response\header_\contentType\Ext.cs" />
+    <Compile Include="http\_session_\KeepAliveI.cs" />
+    <Compile Include="http\_session_\PaginationI.cs" />
+    <Compile Include="nilnul.dev\prj\name\re_\equiv_\SameSln.cs" />
+    <Compile Include="nilnul.dev\prj\name\_PartsBeforeUpperX.cs" />
+    <Compile Include="nilnul.obj.table\phrase_\Json4Dt.cs" />
+    <Compile Include="nilnul.txt\convert_\escape_\by_\dollar_\of_\NonJsIdentifier.cs" />
+    <Compile Include="nilnul._web\Data.cs" />
+    <Compile Include="nilnul._web\_data\Err.cs" />
+    <Compile Include="nilnul\WebI.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="Properties\SettingsX.cs" />
+    <Compile Include="Properties\settings\_url\origin\app\co_\ProdDebug.cs" />
+    <Compile Include="Properties\settings\_url\origin\app\Nulable.cs" />
+    <Compile Include="Properties\settings\_url\origin_\Local.cs" />
+    <Compile Include="Properties\settings\_url\origin_\local\WebApp.cs" />
+    <Compile Include="Svc.cs" />
+    <Compile Include="Svr.cs" />
+    <Compile Include="http\svr\App.cs" />
+    <Compile Include="http\svr\app_\api\attr_\Cors%28.cs" />
+    <Compile Include="http\svr\app_\api\attr_\NakedBody.cs" />
+    <Compile Include="http\svr\app_\api\controller\action\io\binding_\NakedBody.cs" />
+    <Compile Include="http\svr\app_\api\controller\action\io\binding_\_nakedBody\task_\Empty.cs" />
+    <Compile Include="http\svr\app_\api\cors\Factory.cs" />
+    <Compile Include="http\svr\app_\api\formatter_\Txt.cs" />
+    <Compile Include="http\svr\app_\api\handler_\Options.cs" />
+    <Compile Include="http\svr\app\handler_\ascxRender_\OnPage.cs" />
+    <Compile Include="http\svr\app\handler_\ascxRender_\_onPage\PageNoForm.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="http\svr\app\module_\ling_\enCn_\ByRequestX.cs" />
+    <Compile Include="http\svr\app\module_\ling_\enCn_\BySessionX.cs" />
+    <Compile Include="http\svr\app\module_\ling_\enCn_\bySession\InSession.cs" />
+    <Compile Include="http\svr\app\module_\ling_\enCn_\byRequest_\preferCn2En\AftModule.cs" />
+    <Compile Include="http\svr\app\module_\ling_\enCn_\byRequest_\PreferCnToEn.cs" />
+    <Compile Include="http\svr\app\module_\ling_\enCn_\BySession.cs" />
+    <Compile Include="http\svr\app\module_\ling_\enCn_\ByRequest.cs" />
+    <Compile Include="http\svr\app\module_\_ling\PerRequest.cs" />
+    <Compile Include="http\svr\app\module_\_pass\Identity.cs" />
+    <Compile Include="http\svr\app\module_\_pass\Principal.cs" />
+    <Compile Include="Url2 - Copy.cs" />
+    <Compile Include="Url2.cs" />
+    <Compile Include="UrlI2 - Copy.cs" />
+    <Compile Include="UrlI2.cs" />
+    <Compile Include="url\op_\unary_\EnsureAcc.cs" />
+    <Compile Include="url\op_\unary_\DelKeyX.cs" />
+    <Compile Include="url\op_\unary_\DelCredentialQueryFrag.cs" />
+    <Compile Include="url\op_\unary_\DelCredential.cs" />
+    <Compile Include="url\EqI.cs" />
+    <Compile Include="url\eq_\DelKey.cs" />
+    <Compile Include="url\eq_\origin9route_\DisregardCredential.cs" />
+    <Compile Include="url\eq_\Origin9Route.cs" />
+    <Compile Include="url\nulable\set\combine_\except_\svrRoute_\_RemoveRedundantTxtOrSvrRouteX.cs" />
+    <Compile Include="url\nulable\str\combine_\except_\_DelKeyX.cs" />
+    <Compile Include="url\nulable\_ParseX.cs" />
+    <Compile Include="url\op_\Relative.cs" />
+    <Compile Include="url\op_\relative_\Empty.cs" />
+    <Compile Include="url\Parse2 - Copy.cs" />
+    <Compile Include="url\Parse2.cs" />
+    <Compile Include="url\rel_\ProtocolLess.cs" />
+    <Compile Include="url\resource\render\route\_TipX.cs" />
+    <Compile Include="url\set\combine_\except_\_DelKeyX.cs" />
+    <Compile Include="url\set\combine_\except_\_SvrRoute.cs" />
+    <Compile Include="url\_DomainX.cs" />
+    <Compile Include="url\_BrandX.cs" />
+    <Compile Include="web\_ctr\Cfg.cs" />
+    <Compile Include="_url\HostRoute.cs" />
+    <Compile Include="_url\hostRoute_\HostStem.cs" />
+    <Compile Include="_url\origin\Nulable.cs" />
+    <Compile Include="_url\origin_\nilnulCom\_HttpsX.cs" />
+    <Compile Include="_url\origin_\nilnulCom\_HttpX.cs" />
+    <Compile Include="Properties\settings\_url\Origin.cs" />
+    <Compile Include="Properties\settings\_url\origin\WebApp.cs" />
+    <Compile Include="_cfg_\socket\App.cs" />
+    <Compile Include="_cfg_\socket\app_\Old.cs" />
+    <Compile Include="_url\origin_\fS_\Vol.cs" />
+    <Compile Include="_url\origin_\_NilnulComX.cs" />
+    <Compile Include="_cfg_\_SocketX.cs" />
+    <Compile Include="_cfg_\_WebX.cs" />
+    <Compile Include="_credential\Credential.cs" />
+    <Compile Include="http\_request\Method.cs" />
+    <Compile Include="PortS.cs" />
+    <Compile Include="Protocol.cs" />
+    <Compile Include="IriX.cs" />
+    <Compile Include="CfgX.cs" />
+    <Compile Include="%28mime%29\_mime\main_\application\%28retiring\NewFolder1\Application.cs" />
+    <Compile Include="%28mime%29\mime_\application\Sub.cs" />
+    <Compile Include="%28mime%29\mime\Audio.cs" />
+    <Compile Include="%28mime%29\mime\main\eg\image\Sub.cs" />
+    <Compile Include="%28mime%29\mime\Mime.cs" />
+    <Compile Include="%28mime%29\mime\Text.cs" />
+    <Compile Include="%28mime%29\mime\text\Sub.cs" />
+    <Compile Include="%28mime%29\mime\Video.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="socket\Socket.cs" />
+    <Compile Include="%28mime%29\_mime\Mime.cs" />
+    <Compile Include="url\Extensions.cs" />
+    <Compile Include="credential_\_token\Data.cs" />
+    <Compile Include="_http\RangeI.cs" />
+    <Compile Include="_osi_\transport\tcp\PortI.cs" />
+    <Compile Include="_url\_origin\AuthorityI2.cs" />
+    <Compile Include="_url\_origin\authority\convert_\EnsureAcc.cs" />
+    <Compile Include="_url\_origin\authority\convert_\_DelKeyX.cs" />
+    <Compile Include="_url\_origin\authority\convert_\_DelCredentialX.cs" />
+    <Compile Include="_url\_origin\authority\Eq.cs" />
+    <Compile Include="_url\_origin\authority_\NoCredential.cs" />
+    <Compile Include="_url\_origin\Scheme_withSentinel.cs" />
+    <Compile Include="_url\_origin\scheme_\Tel.cs" />
+    <Compile Include="_url\_origin\scheme~\Scheme_.cs" />
+    <Compile Include="_url\_origin\scheme~\Scheme_withSentinel.cs" />
+    <Compile Include="_url\_origin\_authority\socket_\Socket%281.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\HostA%281.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\HostI1.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\Host2.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\host\Eq.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\host\_DomainX.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\host\_BrandX.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\host_\NamedI.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\_host\txt\BeI.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\_host\txt\be\Vow.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\_host\txt\be\vow\En.cs" />
+    <Compile Include="_url\_origin\_scheme\Protocol.cs" />
+    <Compile Include="_url\_origin\_scheme\protocol\Coloned.cs" />
+    <Compile Include="_url\_origin\_scheme\protocol\coloned\NoProtocolColoned.cs" />
+    <Compile Include="_url\_origin\_scheme\protocol\coloned\removed\Nulable.cs" />
+    <Compile Include="_url\_origin_\_PhraseX.cs" />
+    <Compile Include="_url\_resource\_render\route\nulable\_TipX.cs" />
+    <Compile Include="_url\_resource\_render\route\_TipX.cs" />
+    <Compile Include="_url\_resource\_render\route_\Stem.cs" />
+    <Compile Include="_url\_resource\_render\route_\_StemX.cs" />
+    <Compile Include="_url\_resource\_render\_route\Dir.cs" />
+    <Compile Include="_url\_resource\_render\_route\Dirs.cs" />
+    <Compile Include="_url\_resource\_render\_route\dirs\Co.cs" />
+    <Compile Include="_url\_resource\_render\_route\dir\Eq.cs" />
+    <Compile Include="_url\_resource\_render\_route\Div.cs" />
+    <Compile Include="_url\_resource\_render\_route\DivisionI.cs" />
+    <Compile Include="_url\_resource\_render\_route\division\Eq.cs" />
+    <Compile Include="_url\_resource\_render\_route\division\Parse.cs" />
+    <Compile Include="_url\_resource\_render\_route\division\_TipX.cs" />
+    <Compile Include="_url\_resource\_render\_route\div\Document.cs" />
+    <Compile Include="_url\_resource\_render\_route\div\document\Eq.cs" />
+    <Compile Include="_url\_resource\_render\_route\div\document\_TipX.cs" />
+    <Compile Include="_url\_resource\_render\_route\div\Eq.cs" />
+    <Compile Include="_url\_resource\Fragment.cs" />
+    <Compile Include="_url\frag\nulable\_PhraseX.cs" />
+    <Compile Include="_url\Origin1.cs" />
+    <Compile Include="_url\OriginI1.cs" />
+    <Compile Include="_url\_resource\_render\_route\DivisionX.cs" />
+    <Compile Include="_url\origin\convert_\_EnsureAcc.cs" />
+    <Compile Include="_url\origin\convert_\_DelKeyX.cs" />
+    <Compile Include="_url\origin\convert_\_DelCredentialX.cs" />
+    <Compile Include="_url\origin\Eq.cs" />
+    <Compile Include="_url\origin\eq_\DisregardCredential.cs" />
+    <Compile Include="_url\origin_\NoCredential.cs" />
+    <Compile Include="_url\_resource\_render\PathI.cs" />
+    <Compile Include="_url\_resource\_render\Query.cs" />
+    <Compile Include="_url\ResourceI.cs" />
+    <Compile Include="_url\resource\Eq.cs" />
+    <Compile Include="_url\_resource\_render\route\Eq.cs" />
+    <Compile Include="_url\_resource\_render\route\nulable\Coerce.cs" />
+    <Compile Include="_url\_resource\_render\route\nulable\Eq.cs" />
+    <Compile Include="_url\_resource\_render\route\nulable\_PhraseX.cs" />
+    <Compile Include="_url\_origin\scheme~\Scheme.cs" />
+    <Compile Include="_url\_resource\_render\Route.cs" />
+    <Compile Include="_url\_origin\scheme\Eq.cs" />
+    <Compile Include="_url\_resource\_render\route_\Sprig.cs" />
+    <Compile Include="_url\Txt.cs" />
+    <Compile Include="_url\_origin\_authority\Credential%281.cs" />
+    <Compile Include="_url\_origin\_authority\credential\convert_\EnsureAcc.cs" />
+    <Compile Include="_url\_origin\_authority\credential\convert_\_DelKeyX.cs" />
+    <Compile Include="_url\_origin\_authority\credential\Eq.cs" />
+    <Compile Include="_url\_origin\_authority\credential\nulable\convert_\_EnsureAcc.cs" />
+    <Compile Include="_url\_origin\_authority\credential\nulable\convert_\_DelKeyX.cs" />
+    <Compile Include="_url\_origin\_authority\credential\nulable\Eq.cs" />
+    <Compile Include="_url\_origin\_authority\socket\Eq.cs" />
+    <Compile Include="_url\_origin\_authority\_credential\%28retiring\Acc - Copy.cs" />
+    <Compile Include="_url\_origin\_authority\_credential\%28retiring\Key.cs" />
+    <Compile Include="_url\_origin\_authority\_credential\key\nulable\Eq.cs" />
+    <Compile Include="_url\_origin\_authority\_credential\key\nulable\eq_\NulEqEmpty.cs" />
+    <Compile Include="_url\_origin\_authority\_credential\acc\nulable\Eq.cs" />
+    <Compile Include="_url\_origin\_authority\_credential\acc\nulable\eq_\NulEqEmpty.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\host_\named_\domained\Eq.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\port\Eq.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\port\nulable\Eq.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\host_\named_\_domained\domain\Eq.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\host_\named_\_domained\_domain\Brand.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\host_\named_\_domained\_domain\SuffixI.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\host_\named_\_domained\_domain\suffix_\AbbrCountry.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\host_\named_\_domained\_domain\suffix_\Country.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\host_\named_\_domained\_domain\suffix_\Mission.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\host_\named_\_domained\_domain\suffix_\MissionCountry.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\host_\named_\_domained\_domain\suffix_\missionCountry_\EduCn.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\host_\named_\_domained\_domain\suffix_\_abbrCountry\Abbr.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\host_\named_\_domained\_domain\suffix_\_abbrCountry\_abbr\txt\be_\Well.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\host_\named_\_domained\_domain\_brand\txt\be_\Well.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\host_\named_\_domained\_domain\_suffix\Country.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\host_\named_\_domained\_domain\_suffix\Mission.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\host_\named_\_domained\_domain\_suffix\_country\txt\be_\Well.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\host_\named_\_domained\_domain\_suffix\_mission\txt\be_\Well.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\host_\named_\_domained\_prefix\Arc.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\host_\named_\_domained\_prefix\Punctuators.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\host_\named_\_domained\_prefix\_arc\txt\be_\Well.cs" />
+    <Compile Include="_url\_resource\_frag\txt\Be.cs" />
+    <Compile Include="_url\_resource\_frag\txt\be\Vow.cs" />
+    <Compile Include="_url\_resource\_frag\txt\be\vow\En.cs" />
+    <Compile Include="_url\_resource\frag\Eq.cs" />
+    <Compile Include="_url\_resource\frag\nulable\Eq.cs" />
+    <Compile Include="_url\_resource\frag\nulable\_PhraseX.cs" />
+    <Compile Include="_url\_resource\RenderI.cs" />
+    <Compile Include="_url\_resource\render\Eq.cs" />
+    <Compile Include="_url\_resource\_render\query\Eq.cs" />
+    <Compile Include="_url\_resource\_render\query\nulable\Eq.cs" />
+    <Compile Include="_url\_resource\_render\query\nulable\_PhraseX.cs" />
+    <Compile Include="_url\_resource\_render\_route\div\_TipX.cs" />
+    <Compile Include="_url\_resource\_render\_route\_division\DenotesI.cs" />
+    <Compile Include="_url\_resource_\FragI.cs" />
+    <Compile Include="_url\_resource_\RenderI.cs" />
+    <Compile Include="_url\_resource\_render\_route\_route\Separator.cs" />
+    <Compile Include="_url\_txt\character\be_\Invalid.cs" />
+    <Compile Include="_url\_origin\Authority2.cs" />
+    <Compile Include="_url\origin_\_FtpX.cs" />
+    <Compile Include="_url_\ResourceI.cs" />
+    <Compile Include="_url_\Root.cs" />
+    <Compile Include="_url_\Scheme1.cs" />
+    <Compile Include="_url\_origin\_authority\credential_\NoColon.cs" />
+    <Compile Include="_url\_origin\_authority\Socket%281.cs" />
+    <Compile Include="_url_\scheme\fro_\Txt.cs" />
+    <Compile Include="_url\_origin\_authority_\Punctuators.cs" />
+    <Compile Include="_url\_origin\_authority\_credential\%28retiring\%28retiring\Password.cs" />
+    <Compile Include="_url\_origin\_authority\_credential\%28retiring\%28retiring\Username.cs" />
+    <Compile Include="_url\_origin\_authority\_credential_\_key\txt\be_\WellFormed.cs" />
+    <Compile Include="_url\_origin\_authority\_credential_\_acc\txt\be_\%28retiring\WellFormed.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\host_\named_\Domained.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\host_\named_\DomainedA.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\host_\named_\DomainedI.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\host_\named_\NoPrefix.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\Port%281.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\Port.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\Punctuators.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\host_\named_\_domained\Domain.cs" />
+    <Compile Include="_url\_origin\_authority\_credential\Key.cs" />
+    <Compile Include="_url\_origin\_scheme\protocol~\Scheme.cs" />
+    <Compile Include="_url\_origin\_authority\_credential\Acc.cs" />
+    <Compile Include="_url_\%28retiring\Protocol.cs" />
+    <Compile Include="_url_\Punctuators.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\host_\named_\_domained\Prefix.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\_host\Punctuators.cs" />
+    <Compile Include="_url\_origin\scheme_\_sentineled\_main\txt\be_\WellFormed.cs" />
+    <Compile Include="_url_\%28retiring\_protocol\txt\be_\WellFormed.cs" />
+    <Compile Include="_url_\_query\Entry.cs" />
+    <Compile Include="_url_\_query\Punctuators.cs" />
+    <Compile Include="_url_\_query\_entry\_term\txt\be_\Well.cs" />
+    <Compile Include="_url_\_query\_entry\Punctuators.cs" />
+    <Compile Include="_url_\_query\_entry\Term.cs" />
+    <Compile Include="_url_\_sprig\%28stack\Dir.cs" />
+    <Compile Include="_url_\_sprig\Dst.cs" />
+    <Compile Include="_url_\_sprig\%28stack\SegmentI.cs" />
+    <Compile Include="_url_\_sprig\Sprout.cs" />
+    <Compile Include="_url_\_sprig\Punctuators.cs" />
+    <Compile Include="_url_\_sprig\Stem.cs" />
+    <Compile Include="_url_\_sprig\_dst\txt\be_\Well.cs" />
+    <Compile Include="_url\_origin\_authority\_credential_\_acc\txt\be_\WellFormed.cs" />
+    <Compile Include="_url\_origin\_authority\_socket\_port\txt\be_\WellFormed.cs" />
+    <Compile Include="_url_\_word\txt\be_\WellFormed.cs" />
+    <Compile Include="_url_\_word\txt\be_\well\NonBlank.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="%28mime%29\mime\image\" />
+    <Folder Include="%28mime%29\mime_\_application\" />
+    <Folder Include="%28mime%29\_mime\mains\" />
+    <Folder Include="%28mime%29\_mime\main\" />
+    <Folder Include="%28mime%29\_mime\subs_\application\" />
+    <Folder Include="%28mime%29\_mime\sub_\" />
+    <Folder Include="%28mime%29\_mime\_subs\" />
+    <Folder Include="%28retiring\" />
+    <Folder Include="api\filter_\" />
+    <Folder Include="cfg_\" />
+    <Folder Include="ftp\svr\client\" />
+    <Folder Include="ftp\svr\_front\" />
+    <Folder Include="ftp\svr_\" />
+    <Folder Include="http\client\download_\" />
+    <Folder Include="http\client_\" />
+    <Folder Include="http\context_\cors\client\request\header\" />
+    <Folder Include="http\context_\cors\svr\header_\" />
+    <Folder Include="http\context_\cors\svr\response\header_\" />
+    <Folder Include="http\request\header\fields\_keys_\key\" />
+    <Folder Include="http\response\header\field_\" />
+    <Folder Include="http\response\header_\" />
+    <Folder Include="http\response\status\" />
+    <Folder Include="http\_message\" />
+    <Folder Include="http\_request_\%28retiring\" />
+    <Folder Include="http\_request_\headers_\conditional_\" />
+    <Folder Include="http\_request_\headers_\NewFolder1\" />
+    <Folder Include="http\_request_\header\" />
+    <Folder Include="http\_request_\_header_\NewFolder1\" />
+    <Folder Include="http\_request_\_header_\_fields_\_keys_\" />
+    <Folder Include="http\_response_\" />
+    <Folder Include="nilnul.txt\convert_\escape_\by_\underscore_\" />
+    <Folder Include="Properties\settings\_url\origin\app\nulable\" />
+    <Folder Include="svr\" />
+    <Folder Include="url\co\" />
+    <Folder Include="url\duo\" />
+    <Folder Include="url\eq\" />
+    <Folder Include="url\fro_\" />
+    <Folder Include="url\op_\unary_\%28retiring\" />
+    <Folder Include="url\op_\unary_\NewFolder1\" />
+    <Folder Include="url\resource\render\route\tip\" />
+    <Folder Include="url\str\combine_\except_\" />
+    <Folder Include="url\_hier\" />
+    <Folder Include="url\_parse\" />
+    <Folder Include="url_\" />
+    <Folder Include="_cfg\local\" />
+    <Folder Include="_cfg_\socket_\nilnulCom_\" />
+    <Folder Include="_cfg_\_url_\" />
+    <Folder Include="_url\_dir\" />
+    <Folder Include="_url\_div\" />
+    <Folder Include="_url\_origin\authority\convert_\%28retiring\" />
+    <Folder Include="_url\_origin\scheme_\_sentineled\_main\txt\be_\_well\" />
+    <Folder Include="_url\_origin\_authority\_credential_\acc\" />
+    <Folder Include="_url\_origin\_authority\_credential_\_acc\txt\be_\_well\" />
+    <Folder Include="_url\_origin\_authority\_socket\host_\named\" />
+    <Folder Include="_url\_origin\_authority\_socket\host_\named_\_domained\domain_\" />
+    <Folder Include="_url\_origin\_authority\_socket\host_\named_\_domained\_domain\suffix_\%28retiring\" />
+    <Folder Include="_url\_origin\_authority\_socket\_port\txt\be_\_well\" />
+    <Folder Include="_url\_origin\_authority\_socket_\" />
+    <Folder Include="_url\_resource\_render\route_\stem\" />
+    <Folder Include="_url\_resource\_render\_route\division\nulable\" />
+    <Folder Include="_url\_resource\_render\_route\div\eq_\" />
+    <Folder Include="_url_\%28retiring\_protocol\txt\be_\_well\" />
+    <Folder Include="_url_\origin_\" />
+    <Folder Include="_url_\scheme_\" />
+    <Folder Include="_url_\_frag\txt\" />
+    <Folder Include="_url_\_sprig\_sprout\" />
+    <Folder Include="_url_\_word\txt\be_\_well\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <!--<ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Cors">
+      <Version>5.2.7</Version>
+    </PackageReference>
+    <PackageReference Include="nilnul.num._quotient_._LIB_">
+      <Version>1.0.7633.25048</Version>
+    </PackageReference>
+    <PackageReference Include="nilnul.num._real_._LIB_">
+      <Version>2.0.7672.42930</Version>
+    </PackageReference>
+    <PackageReference Include="nilnul._character_._LIB_" Alias="global,character">
+      <Version>2.1.7634.36220</Version>
+    </PackageReference>
+    <PackageReference Include="nilnul._fs_._LIB_">
+      <Version>2.0.7632.36132</Version>
+    </PackageReference>
+    <PackageReference Include="nilnul._lang_._LIB_">
+      <Version>1.0.6962.27014</Version>
+    </PackageReference>
+    <PackageReference Include="nilnul._num_._LIB_">
+      <Version>1.0.7626.26160</Version>
+    </PackageReference>
+    <PackageReference Include="nilnul._obj_._LIB_">
+      <Version>1.0.7671.27343</Version>
+    </PackageReference>
+    <PackageReference Include="nilnul._rel_._LIB_">
+      <Version>1.0.7651.38563</Version>
+    </PackageReference>
+    <PackageReference Include="nilnul._txt_._LIB_" Alias="global,txt">
+      <Version>1.0.7642.38229</Version>
+    </PackageReference>
+    <PackageReference Include="_nilnul_._LIB_">
+      <Version>1.0.7634.21556</Version>
+    </PackageReference>
+  </ItemGroup>-->
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="PostBuildMacros">
+    <GetAssemblyIdentity AssemblyFiles="$(TargetPath)">
+      <Output TaskParameter="Assemblies" ItemName="Targets" />
+    </GetAssemblyIdentity>
+    <ItemGroup>
+      <VersionNumber Include="@(Targets->'%(Version)')" />
+    </ItemGroup>
+  </Target>
+  <PropertyGroup>
+    <PostBuildEventDependsOn>
+			$(PostBuildEventDependsOn);
+			PostBuildMacros;
+		</PostBuildEventDependsOn>
+    <PostBuildEvent>if $(ConfigurationName) == Release (
+	"NuGet.exe" pack "$(ProjectPath)"  -Prop Configuration=$(ConfigurationName) -Exclude **/*.tt
+	"NuGet.exe" push $(TargetName).@(VersionNumber).nupkg -Source local
+	"NuGet.exe" push $(TargetName).@(VersionNumber).nupkg -Source wyt
+) ELSE (
+	if $(ConfigurationName) == Symbols4Debug (
+		"NuGet.exe" pack "$(ProjectPath)" -Symbols -Prop Configuration=$(ConfigurationName) -Exclude **/*.tt
+		"NuGet.exe" push $(TargetName).@(VersionNumber).symbols.nupkg -Source local
+		"NuGet.exe" push $(TargetName).@(VersionNumber).symbols.nupkg -Source wyt
+	) ELSE (
+		echo $(VersionNumber)
+	)
+)
+</PostBuildEvent>
+  </PropertyGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\(packages)\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\(packages)\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\..\(packages)\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\(packages)\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\..\(packages)\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\(packages)\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
+  </Target>
+  <Import Project="..\..\(packages)\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\..\(packages)\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="..\..\(packages)\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\(packages)\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

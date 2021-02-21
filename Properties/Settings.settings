@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="nilnul.web.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="authority" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">nilnul.com</Value>
+    </Setting>
+    <Setting Name="scheme" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http</Value>
+    </Setting>
+    <Setting Name="authority__debug" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">localhost:12345</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
